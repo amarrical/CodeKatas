@@ -15,7 +15,7 @@ namespace Dice
 
         public int Roll()
         {
-            Random rnd = new Random();
+            var rnd = RandomFeeder.Feeder;
             int roll;
             if (rnd.Next(1, 3) >= 2)
             {
