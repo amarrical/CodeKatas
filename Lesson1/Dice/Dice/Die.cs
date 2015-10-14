@@ -13,7 +13,7 @@ namespace Dice
 
         public int Roll()
         {
-            var rnd = new Random();
+            var rnd = RandomFeeder.Feeder;
             return rnd.Next(1, this._sides + 1);
         }
     }
