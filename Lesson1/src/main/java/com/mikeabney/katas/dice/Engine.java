@@ -28,8 +28,4 @@ public class Engine {
     public int roll() {
         return cup.roll();
     }
-
-    public int cupSize() {
-        return cup.size();
-    }
 }
