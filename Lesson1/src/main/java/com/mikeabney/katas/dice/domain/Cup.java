@@ -25,8 +25,4 @@ public class Cup {
     public void empty() {
         dice.clear();
     }
-
-    public int size() {
-        return dice.size();
-    }
 }

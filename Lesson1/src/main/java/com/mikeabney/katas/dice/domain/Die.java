@@ -8,7 +8,7 @@ public class Die {
 
     public Die(int sides) {
         if (sides < 1) {
-            throw new IllegalArgumentException(String.format("Attempt to create a die with negative sides [%d].", sides));
+            throw new IllegalArgumentException(String.format("Attempt to create a die with negative sides [%i].", sides));
         }
         this.sides = sides;
         generator = new Random(System.currentTimeMillis());
