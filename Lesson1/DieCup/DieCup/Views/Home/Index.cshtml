@@ -1,0 +1,18 @@
+﻿@model DieCupModel
+@{
+    var results = "results";
+}
+
+@using (Ajax.BeginForm(MVC.Home.Roll(), new AjaxOptions() {
+    InsertionMode = InsertionMode.Replace,
+    UpdateTargetId = results }))
+{
+
+    @Html.EditorForModel()
+
+    <input type="submit" value="Roll" />
+}
+
+<div id="@results">
+
+</div>
