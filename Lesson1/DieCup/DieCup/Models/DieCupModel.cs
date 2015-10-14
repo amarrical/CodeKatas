@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataAnnotationsExtensions;
+using ExpressiveAnnotations.Attributes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -9,25 +11,31 @@ namespace DieCup.Models
     public class DieCupModel
     {
         [Required]
-        public int count { get; set; }
+        [Integer]
+        public int Count { get; set; }
 
         [Required]
-        public int min { get; set; }
+        [Integer]
+        public int Minimum { get; set; }
 
         [Required]
-        public int max { get; set; }
+        [Integer]
+        [AssertThat("Maximum > minimum")]
+        public int Maximum { get; set; }
 
-        public int? loadedVal { get; set; }
+        [Integer]
+        [AssertThat("LoadedChance >= Minimum && LoadedChance <= Maximum")]
+        public int? LoadedValue { get; set; }
 
         [Range(0, 1)]
-        public double loadedChance { get; set; }
+        public double LoadedChance { get; set; }
 
         public DieCupModel()
         {
-            count = 1;
-            min = 1;
-            max = 6;
-            loadedChance = 0.5;
+            Count = 1;
+            Minimum = 1;
+            Maximum = 6;
+            LoadedChance = 0.5;
         }
     }
 }

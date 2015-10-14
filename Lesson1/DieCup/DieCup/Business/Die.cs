@@ -4,28 +4,32 @@ namespace DieCup.Business
 {
     internal class Die
     {
-        private int? loaded;
+        private int? loadedValue;
         private double loadedChance;
         private int max;
         private int min;
         private static Random rnd = new Random();
 
-        public Die(int min = 1, int max = 6, int? loaded = null, double loadedChance = 0.5)
+        public Die(int min = 1, int max = 6, int? loadedValue = null, double loadedChance = 0.5)
         {
             if (loadedChance > 1)
                 throw new ArgumentOutOfRangeException(
                     "The parameter 'loadedChance' must be between 0 and 1");
 
+            if (loadedValue <= min || loadedValue >= max)
+                throw new ArgumentOutOfRangeException(
+                    "The parameter 'loadedValue' must be between min and max");
+
             this.min = min;
             this.max = max;
-            this.loaded = loaded;
+            this.loadedValue = loadedValue;
             this.loadedChance = loadedChance;
         }
 
         public int Roll()
         {
-            return (loaded.HasValue && rnd.NextDouble() < loadedChance) ? 
-                loaded.Value : 
+            return (loadedValue.HasValue && rnd.NextDouble() < loadedChance) ? 
+                loadedValue.Value : 
                 rnd.Next(min, max + 1);
         }
     }

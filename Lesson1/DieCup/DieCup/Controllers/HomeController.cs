@@ -18,11 +18,11 @@ namespace DieCup.Controllers
         public virtual ActionResult Roll(DieCupModel model)
         {
             var cup = new CupOfDice(
-                model.count,
-                model.min,
-                model.max,
-                model.loadedVal,
-                model.loadedChance);
+                model.Count,
+                model.Minimum,
+                model.Maximum,
+                model.LoadedValue,
+                model.LoadedChance);
 
             return PartialView(MVC.Home.Views._RollResult, cup.RollDice());
         }
