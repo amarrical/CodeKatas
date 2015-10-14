@@ -1,0 +1,6 @@
+D:\old_documents\Documents\Improving\CodeKatas\Lesson1\DiceProblem\bin\Debug\DiceProblem.exe.config
+D:\old_documents\Documents\Improving\CodeKatas\Lesson1\DiceProblem\bin\Debug\DiceProblem.exe
+D:\old_documents\Documents\Improving\CodeKatas\Lesson1\DiceProblem\bin\Debug\DiceProblem.pdb
+D:\old_documents\Documents\Improving\CodeKatas\Lesson1\DiceProblem\obj\Debug\DiceProblem.csprojResolveAssemblyReference.cache
+D:\old_documents\Documents\Improving\CodeKatas\Lesson1\DiceProblem\obj\Debug\DiceProblem.exe
+D:\old_documents\Documents\Improving\CodeKatas\Lesson1\DiceProblem\obj\Debug\DiceProblem.pdb
