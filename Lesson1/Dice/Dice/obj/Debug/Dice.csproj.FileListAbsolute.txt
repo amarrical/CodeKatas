@@ -1,0 +1,6 @@
+C:\dev\CodeKatas\Lesson1\Dice\Dice\bin\Debug\Dice.exe.config
+C:\dev\CodeKatas\Lesson1\Dice\Dice\bin\Debug\Dice.exe
+C:\dev\CodeKatas\Lesson1\Dice\Dice\bin\Debug\Dice.pdb
+C:\dev\CodeKatas\Lesson1\Dice\Dice\obj\Debug\Dice.csprojResolveAssemblyReference.cache
+C:\dev\CodeKatas\Lesson1\Dice\Dice\obj\Debug\Dice.exe
+C:\dev\CodeKatas\Lesson1\Dice\Dice\obj\Debug\Dice.pdb
