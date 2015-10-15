@@ -68,3 +68,10 @@ C:\CodeKatas\CodeKatas\Lesson1\DieCup\DieCup\obj\Debug\DieCup.csprojResolveAssem
 C:\CodeKatas\CodeKatas\Lesson1\DieCup\DieCup\obj\Debug\DieCup.dll
 C:\CodeKatas\CodeKatas\Lesson1\DieCup\DieCup\obj\Debug\DieCup.pdb
 C:\CodeKatas\CodeKatas\Lesson1\DieCup\DieCup\bin\T4MVCExtensions.dll
+C:\CodeKatas\CodeKatas\Lesson1\DieCup\DieCup\bin\DataAnnotationsExtensions.ClientValidation.dll
+C:\CodeKatas\CodeKatas\Lesson1\DieCup\DieCup\bin\DataAnnotationsExtensions.dll
+C:\CodeKatas\CodeKatas\Lesson1\DieCup\DieCup\bin\ExpressiveAnnotations.dll
+C:\CodeKatas\CodeKatas\Lesson1\DieCup\DieCup\bin\ExpressiveAnnotations.MvcUnobtrusive.dll
+C:\CodeKatas\CodeKatas\Lesson1\DieCup\DieCup\bin\WebActivator.dll
+C:\CodeKatas\CodeKatas\Lesson1\DieCup\DieCup\bin\ExpressiveAnnotations.xml
+C:\CodeKatas\CodeKatas\Lesson1\DieCup\DieCup\bin\ExpressiveAnnotations.MvcUnobtrusive.xml

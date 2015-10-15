@@ -2,21 +2,24 @@
 @{
     var results = "results";
 }
+<p>
+    @using (Ajax.BeginForm(MVC.Home.Roll(), new AjaxOptions()
+    {
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = results
+    }))
+    {
 
-@using (Ajax.BeginForm(MVC.Home.Roll(), new AjaxOptions() {
-    InsertionMode = InsertionMode.Replace,
-    UpdateTargetId = results }))
-{
-
-    @Html.EditorForModel()
-
-    <input type="submit" value="Roll" />
-}
-
+        @Html.EditorForModel()
+        @Html.ValidationSummary()
+        <input type="submit" value="Roll" />
+        <input type="reset" value="Reset" onclick="$('#@results').html('')" />
+    }
+</p>
 <p>
     Results:
+    <div id="@results">
+        No results yet...
+    </div>
 </p>
 
-<div id="@results">
-
-</div>

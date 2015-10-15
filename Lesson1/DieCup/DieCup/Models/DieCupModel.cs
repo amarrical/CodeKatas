@@ -20,7 +20,7 @@ namespace DieCup.Models
 
         [Required]
         [Integer]
-        [AssertThat("Maximum > minimum")]
+        [AssertThat("Maximum > Minimum")]
         public int Maximum { get; set; }
 
         [Integer]

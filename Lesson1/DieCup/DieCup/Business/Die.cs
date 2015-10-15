@@ -14,11 +14,15 @@ namespace DieCup.Business
         {
             if (loadedChance > 1)
                 throw new ArgumentOutOfRangeException(
-                    "The parameter 'loadedChance' must be between 0 and 1");
+                    "The parameter 'loadedChance' must be between 0 and 1.");
 
             if (loadedValue <= min || loadedValue >= max)
                 throw new ArgumentOutOfRangeException(
-                    "The parameter 'loadedValue' must be between min and max");
+                    "The parameter 'loadedValue' must be between min and max.");
+
+            if (min > max)
+                throw new ArgumentOutOfRangeException(
+                    "The value for min must be less than max.");
 
             this.min = min;
             this.max = max;
