@@ -22,7 +22,9 @@ public class EventLoop {
                 command = menu.getCommandForEntry(inputElements[0]);
                 switch (command) {
                     case ROLL :
-                        System.out.println("Result: " + engine.roll());
+                        int cupSize = engine.cupSize();
+                        String dieOrDice = cupSize == 1 ? "die" : "dice";
+                        System.out.println(String.format("Result of rolling %d %s: %d", cupSize, dieOrDice, engine.roll()));
                         break;
                     case DIE :
                         if (inputElements.length > 2) {

@@ -10,7 +10,7 @@ public class LoadedDie extends Die {
         super(sides);
         if (loadedValue < 1 || loadedValue > sides) {
             throw new IllegalArgumentException(
-                    String.format("Attempt to load %i-sided die with value (%i) that doesn't match a side!",
+                    String.format("Attempt to load %d-sided die with value (%d) that doesn't match a side!",
                     sides, loadedValue));
         }
         loadGenerator = new Random(System.currentTimeMillis());
