@@ -15,10 +15,10 @@ class Menu:
         self.repl()
         
     def repl(self):
-        print("1 : self.roll\n")
-        print("2 : self.addDie\n")
-        print("3 : self.cup.empty")
-        opt = input("Option:")
+        print("1 : Roll the cup")
+        print("2 : Add a die")
+        print("3 : Empty the cup")
+        opt = int(input("Option:"))
         try: 
             self.options[opt]()
         except:
@@ -30,15 +30,19 @@ class Menu:
         self.repl()
         
     def addDie(self):
-        print("double bleh")
-        self.dieOptions[input()]()
+        print("1 : Regular die")
+        print("2 : Loaded die")
+        try:
+            self.dieOptions[int(input("Option:"))]()
+        except:    
+            self.repl()
         
     def regularDie(self):
-        self.cup.addDie(Die(input("Number of sides:")))
+        self.cup.addDie(Die(int(input("Number of sides:"))))
         self.repl()
         
     def loadedDie(self):
-        self.cup.addDie(Die(input("Number of sides:"), input("Weighted side:")))
+        self.cup.addDie(Die(int(input("Number of sides:")), int(input("Weighted side:"))))
         self.repl()
         
         
