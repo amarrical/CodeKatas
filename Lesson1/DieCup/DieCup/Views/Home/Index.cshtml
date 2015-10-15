@@ -1,6 +1,7 @@
 ﻿@model DieCupModel
 @{
     var results = "results";
+    var noResults = "No results yet...";
 }
 <p>
     @using (Ajax.BeginForm(MVC.Home.Roll(), new AjaxOptions()
@@ -9,17 +10,15 @@
         UpdateTargetId = results
     }))
     {
-
         @Html.EditorForModel()
-        @Html.ValidationSummary()
         <input type="submit" value="Roll" />
-        <input type="reset" value="Reset" onclick="$('#@results').html('')" />
+        <input type="reset" value="Reset" onclick="$('#@results').html('@noResults')" />
     }
 </p>
 <p>
     Results:
     <div id="@results">
-        No results yet...
+        @noResults
     </div>
 </p>
 

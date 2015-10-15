@@ -11,10 +11,7 @@ namespace DieCup
     {
         public void Configuration(IAppBuilder app)
         {
-            DataAnnotationsModelValidatorProvider.RegisterAdapter(
-                typeof(RequiredIfAttribute), typeof(RequiredIfValidator));
-            DataAnnotationsModelValidatorProvider.RegisterAdapter(
-                typeof(AssertThatAttribute), typeof(AssertThatValidator));
+
         }
     }
 }
