@@ -32,17 +32,21 @@ public class Mutator {
     }
 
     private String mutate(Integer number) {
-        String replacement = findReplacementOrEmptyString(number);
-        return replacement.isEmpty() ? number.toString() : replacement;
-    }
+        NavigableSet<Integer> keySet = replacementMap.navigableKeySet();
+
+        Stream<Integer> divisibleKeyStream = keySet.stream()
+                .filter(key -> number % key == 0);
+
+        Stream<String> replacementStream = divisibleKeyStream
+                .map(key -> Mutator.this.replacementMap.get(key));
 
     private String findReplacementOrEmptyString(Integer number) {
         Stream<Integer> replacementKeysStream = findRelevantReplacementKeys(number);
         Stream<String> replacementStream = replacementKeysStream.map(key -> Mutator.this.replacementMap.get(key));
-        return replacementStream.collect(Collectors.joining());
+        String replacement = replacementStream.collect(Collectors.joining());
     }
 
-    private Stream<Integer> findRelevantReplacementKeys(Integer number) {
+        return replacement.isEmpty() ? number.toString() : replacement;
         NavigableSet<Integer> keySet = replacementMap.navigableKeySet();
         Stream<Integer> filteredKeyStream = keySet.stream().filter(key -> number % key == 0);
         return filteredKeyStream;
