@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
@@ -56,6 +57,26 @@ public class AcceptanceExamples {
         mutator.removeReplacement(5);
         mutator.addReplacement(4, "tazz");
         Assert.assertEquals(fizzTazz1to20, mutator.mutate(IntStream.rangeClosed(1, 20)));
+    }
 
+    @Test
+    public void emptyRangeShouldGiveEmptyList() {
+        List<String> empty = new ArrayList<>();
+        Assert.assertEquals(empty, mutator.mutate(IntStream.range(1, 1)));
+    }
+
+    @Test
+    public void negativeRangeShouldWork() {
+        List<String> empty = Arrays.asList(new String[] {
+                "-16", "fizzbuzz", "-14", "-13", "fizz", "-11", "buzz",
+                "fizz", "-8", "-7", "fizz", "buzz", "-4", "fizz", "-2", "-1", "fizzbuzz"
+        });
+        Assert.assertEquals(empty, mutator.mutate(IntStream.range(-16, 1)));
+    }
+
+    @Test
+    public void reverseRangeShouldGiveEmptyList() {
+        List<String> empty = new ArrayList<>();
+        Assert.assertEquals(empty, mutator.mutate(IntStream.range(5, -1)));
     }
 }
