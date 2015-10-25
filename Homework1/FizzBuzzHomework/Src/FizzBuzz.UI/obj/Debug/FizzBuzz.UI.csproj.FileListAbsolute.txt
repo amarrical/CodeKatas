@@ -1,0 +1,8 @@
+E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\bin\Debug\FizzBuzz.UI.exe.config
+E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\bin\Debug\FizzBuzz.UI.exe
+E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\bin\Debug\FizzBuzz.UI.pdb
+E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\obj\Debug\FizzBuzz.UI.csprojResolveAssemblyReference.cache
+E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\obj\Debug\FizzBuzz.UI.exe
+E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\obj\Debug\FizzBuzz.UI.pdb
+E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\bin\Debug\FizzBuzz.dll
+E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\bin\Debug\FizzBuzz.pdb
