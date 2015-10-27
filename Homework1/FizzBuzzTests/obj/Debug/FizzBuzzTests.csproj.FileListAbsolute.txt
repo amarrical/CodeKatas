@@ -1,0 +1,7 @@
+D:\old_documents\Documents\Improving\CodeKatas\Homework1\FizzBuzzTests\obj\Debug\FizzBuzzTests.csprojResolveAssemblyReference.cache
+D:\old_documents\Documents\Improving\CodeKatas\Homework1\FizzBuzzTests\bin\Debug\FizzBuzzTests.dll
+D:\old_documents\Documents\Improving\CodeKatas\Homework1\FizzBuzzTests\bin\Debug\FizzBuzzTests.pdb
+D:\old_documents\Documents\Improving\CodeKatas\Homework1\FizzBuzzTests\bin\Debug\FizzBuzz.exe
+D:\old_documents\Documents\Improving\CodeKatas\Homework1\FizzBuzzTests\bin\Debug\FizzBuzz.pdb
+D:\old_documents\Documents\Improving\CodeKatas\Homework1\FizzBuzzTests\obj\Debug\FizzBuzzTests.dll
+D:\old_documents\Documents\Improving\CodeKatas\Homework1\FizzBuzzTests\obj\Debug\FizzBuzzTests.pdb
