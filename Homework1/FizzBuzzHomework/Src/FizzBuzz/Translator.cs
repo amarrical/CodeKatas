@@ -6,6 +6,9 @@
     using System.Linq;
     using System.Text;
 
+    /// <summary>
+    /// Translates a number based on contained translations.
+    /// </summary>
     public class Translator
     {
         #region [ Fields ]
@@ -20,7 +23,7 @@
         #region [ Constructors ]
 
         /// <summary>
-        /// Instantiates a new instance of the Translator class.
+        /// Initializes a new instance of the <see cref="Translator"/> class.
         /// </summary>
         public Translator()
         {
@@ -34,10 +37,10 @@
         /// <summary>
         /// Adds a translation to the list of translations this translator will make.
         /// </summary>
-        /// <param name="translation"></param>
+        /// <param name="translation">Translation being added.</param>
         public void AddTranslation(Translation translation)
         {
-            if(this.translations.Any(r => r.Divisor == translation.Divisor))
+            if (this.translations.Any(r => r.Divisor == translation.Divisor))
                 throw new ArgumentException("Cannot add translation with same divisor", nameof(translation));
 
             this.translations.Add(translation);
@@ -59,7 +62,7 @@
         public string Translate(int number)
         {
             var stringbuilder = new StringBuilder();
-            this.translations.Where(t => t.CanHandle(number)).OrderBy(t => t.Replacement).ToList().ForEach(t => stringbuilder.Append(t.Replacement));
+            this.translations.Where(t => t.CanHandle(number)).OrderBy(t => t.Divisor).ToList().ForEach(t => stringbuilder.Append(t.Replacement));
             if (stringbuilder.Length == 0)
                 stringbuilder.Append(number.ToString(CultureInfo.InvariantCulture));
 

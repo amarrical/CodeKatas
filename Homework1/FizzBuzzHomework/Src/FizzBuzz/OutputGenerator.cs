@@ -27,7 +27,7 @@ namespace FizzBuzz
         #region [ Constructors ]
 
         /// <summary>
-        /// Instantiates an instance of the OutputGenerator class;
+        /// Initializes a new instance of the <see cref="OutputGenerator"/> class. 
         /// </summary>
         /// <param name="translator">The translator this output genrator will use.</param>
         public OutputGenerator(Translator translator)

@@ -6,3 +6,11 @@ E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\obj\Debug\FizzBuzz.U
 E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\obj\Debug\FizzBuzz.UI.pdb
 E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\bin\Debug\FizzBuzz.dll
 E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\bin\Debug\FizzBuzz.pdb
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\bin\Debug\FizzBuzz.UI.exe.config
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\obj\Debug\FizzBuzz.UI.exe
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\obj\Debug\FizzBuzz.UI.pdb
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\bin\Debug\FizzBuzz.UI.exe
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\bin\Debug\FizzBuzz.UI.pdb
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\bin\Debug\FizzBuzz.dll
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\bin\Debug\FizzBuzz.pdb
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz.UI\obj\Debug\FizzBuzz.UI.csprojResolveAssemblyReference.cache

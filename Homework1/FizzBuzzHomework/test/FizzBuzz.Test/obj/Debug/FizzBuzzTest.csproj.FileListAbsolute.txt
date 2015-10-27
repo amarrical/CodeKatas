@@ -7,3 +7,12 @@ E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\test\FizzBuzz.Test\bin\Debug\FizzBuz
 E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\test\FizzBuzz.Test\bin\Debug\nunit.framework.dll
 E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\test\FizzBuzz.Test\bin\Debug\FizzBuzz.pdb
 E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\test\FizzBuzz.Test\bin\Debug\nunit.framework.xml
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\test\FizzBuzz.Test\bin\Debug\FizzBuzz.Test.dll
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\test\FizzBuzz.Test\bin\Debug\FizzBuzz.Test.pdb
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\test\FizzBuzz.Test\bin\Debug\FizzBuzz.dll
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\test\FizzBuzz.Test\bin\Debug\nunit.framework.dll
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\test\FizzBuzz.Test\bin\Debug\FizzBuzz.pdb
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\test\FizzBuzz.Test\bin\Debug\nunit.framework.xml
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\test\FizzBuzz.Test\obj\Debug\FizzBuzzTest.csprojResolveAssemblyReference.cache
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\test\FizzBuzz.Test\obj\Debug\FizzBuzz.Test.dll
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\test\FizzBuzz.Test\obj\Debug\FizzBuzz.Test.pdb
