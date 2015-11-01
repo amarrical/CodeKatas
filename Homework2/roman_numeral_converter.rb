@@ -1,14 +1,14 @@
 class Converter
 
-	def arabic_to_roman(number)
-		if !number.kind_of?(Fixnum) || number < 0
+  def arabic_to_roman(number)
+    if !number.kind_of?(Fixnum) || number < 0
       return nil
     end
 
     result = ""
-		remaining = number
-		if(number == 0)
-			return "nulla"
+    remaining = number
+    if(number == 0)
+      return "nulla"
     end
 
     values = getValues
@@ -20,8 +20,8 @@ class Converter
       end
     end
 
-		return result
-	end
+    return result
+  end
 
   def getValues
     {
