@@ -2,7 +2,6 @@ require_relative "string_calculator"
 require "minitest/autorun"
 
 class TestStringCalculator < Minitest::Test
-
   [['empty_string', ''],
    ['nil', nil]
   ].each do | name_and_number |
@@ -21,7 +20,7 @@ class TestStringCalculator < Minitest::Test
      assert_equal(name_numbers_and_expected[2], Calculator.add(name_numbers_and_expected[1]))
     end
   end
-  
+
   [['one_two_three', '1,2,3', 6],
    ['one_newline', "3\n2", 5],
    ['newline_and_comma', "1\n2,3", 6],
@@ -31,7 +30,7 @@ class TestStringCalculator < Minitest::Test
      assert_equal(name_numbers_and_expected[2], Calculator.add(name_numbers_and_expected[1]))
    end
   end
-  
+
   [['zero_two', '0,2', 2],
    ['zero_two_two', '0,2,2', 4],
    ['zero_three', '0,3', 3],
@@ -52,7 +51,6 @@ class TestStringCalculator < Minitest::Test
     end
   end
 
-=begin
   [['asterisk', '//*\n1*2', 3],
    ['semicolon', '//;\n1;2', 3],
    ['semicolon_one_through_ten', '//;\n1;2;3;4;5;6;7;8;9;10', 55]
@@ -60,13 +58,12 @@ class TestStringCalculator < Minitest::Test
      define_method("test_add_when_given_delimiter_uses_it_with_#{name_numbers_and_expected[0]}") do
        assert_equal(name_numbers_and_expected[2], Calculator.add(name_numbers_and_expected[1]))
      end
-   end
-=end
-
+  end
+  
   def test_add_raises_argument_exception_when_supplied_string_does_not_meet_rule
     err = assert_raises(ArgumentError) { Calculator.add('1,-1') }
     assert_equal(
-      'string contains [-1], which does not meet rule. entered number should not negative.', 
+      'string contains [-1], which does not meet rule. entered number should not negative.',
       err.message)
   end
 end
