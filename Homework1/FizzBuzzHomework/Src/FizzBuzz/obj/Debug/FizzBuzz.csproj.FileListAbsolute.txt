@@ -3,3 +3,8 @@ E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz\bin\Debug\FizzBuzz.pdb
 E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz\obj\Debug\FizzBuzz.csprojResolveAssemblyReference.cache
 E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz\obj\Debug\FizzBuzz.dll
 E:\Dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz\obj\Debug\FizzBuzz.pdb
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz\bin\Debug\FizzBuzz.dll
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz\bin\Debug\FizzBuzz.pdb
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz\obj\Debug\FizzBuzz.csprojResolveAssemblyReference.cache
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz\obj\Debug\FizzBuzz.dll
+C:\dev\CodeKatas\Homework1\FizzBuzzHomework\Src\FizzBuzz\obj\Debug\FizzBuzz.pdb

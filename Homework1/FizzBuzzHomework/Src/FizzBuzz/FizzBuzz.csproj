@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="OutputGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Replacement.cs" />
+    <Compile Include="Translation.cs" />
     <Compile Include="Translator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

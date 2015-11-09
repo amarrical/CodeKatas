@@ -16,16 +16,16 @@ namespace FizzBuzz
         #region [ Constructors ]
 
         /// <summary>
-        /// Instantiates an instance of the ReplacmentString class.
+        /// Initializes a new instance of the <see cref="Translation"/> class.
         /// </summary>
-        /// <param name="divisor">Divsor to detrmine numbers to replace.</param>
-        /// <param name="replacement">Replacment for numbers divisible by divisor.</param>
+        /// <param name="divisor">Divisor to determine numbers to replace.</param>
+        /// <param name="replacement">Replacement for numbers divisible by divisor.</param>
         public Translation(int divisor, string replacement)
         {
-            if(divisor < 1)
+            if (divisor < 1)
                 throw new ArgumentException("Divisor cannot be less than 1", nameof(divisor));
 
-            if(string.IsNullOrEmpty(replacement))
+            if (string.IsNullOrEmpty(replacement))
                 throw new ArgumentException("Replacement cannot be null or empty", nameof(replacement));
 
             this.Divisor = divisor;
@@ -37,12 +37,12 @@ namespace FizzBuzz
         #region [ Properties ]
 
         /// <summary>
-        /// Divisor showing which numbers should be replaced.
+        /// Gets the divisor showing which numbers should be replaced.
         /// </summary>
         public int Divisor { get; private set; }
 
         /// <summary>
-        /// Repacement for numbers divisible by divisor.
+        /// Gets the repacement for numbers divisible by divisor.
         /// </summary>
         public string Replacement { get; private set; }
 
@@ -55,7 +55,6 @@ namespace FizzBuzz
         /// </summary>
         /// <param name="number">The number to be tested.</param>
         /// <returns>A value indicating whither the number should be replaced.</returns>
-
         public bool CanHandle(int number)
         {
             return (number % this.Divisor == 0);
