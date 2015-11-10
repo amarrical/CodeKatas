@@ -6,6 +6,8 @@
 //-----------------------------------------------------------------------
 namespace TicTacToe
 {
+    using System.Security.Principal;
+
     /// <summary>
     /// Represents a tic tac toe game.
     /// </summary>
@@ -84,8 +86,28 @@ namespace TicTacToe
         /// <returns>A value indicating wheither the game is finished.</returns>
         public bool IsFinished()
         {
+            if (//rows
+                this.board[0, 0] == this.board[0, 1] && this.board[0, 0] == this.board[0, 2]
+                || this.board[1, 0] == this.board[1, 1] && this.board[1, 0] == this.board[1, 2]
+                || this.board[2, 0] == this.board[2, 1] && this.board[2, 0] == this.board[2, 2]
+                // collumns
+                || this.board[0, 0] == this.board[1, 0] && this.board[0, 0] == this.board[2, 0]
+                || this.board[0, 1] == this.board[1, 1] && this.board[0, 1] == this.board[2, 1]
+                || this.board[0, 2] == this.board[1, 2] && this.board[0, 2] == this.board[2, 2]
+                // diagnals
+                || this.board[1, 1] == this.board[0, 0] && this.board[0, 0] == this.board[2, 2]
+                || this.board[1, 1] == this.board[2, 0] && this.board[1, 1] == this.board[0, 2])
+            {
+                return true;
+            }
 
-            return false;
+            for (var row = 0; row < 3; row++)
+                for (var col = 0; col < 3; col++)
+                    if (this.board[col, row] == State.Empty)
+                        return false;
+
+            // full board
+            return true;
         }
 
         #endregion
