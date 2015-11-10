@@ -6,7 +6,7 @@
 //-----------------------------------------------------------------------
 
 using System.Diagnostics.CodeAnalysis;
-using System.Security.Cryptography.X509Certificates;
+
 using NUnit.Framework;
 
 namespace TicTacToe.Test
@@ -101,6 +101,58 @@ namespace TicTacToe.Test
 
             // Assert
             Assert.False(crossPlaced);
+        }
+
+        [Test]
+        public void ThreeInAColumnWins()
+        {
+            // Assemble
+            target.SetCircle(0, 0);
+            target.SetCircle(0, 1);
+            target.SetCircle(0, 2);
+
+            // Act
+            // Assert
+            Assert.True(target.IsFinished());
+        }
+
+        [Test]
+        public void ThreeInARowWins()
+        {
+            // Assemble
+            target.SetCircle(0, 0);
+            target.SetCircle(1, 0);
+            target.SetCircle(2, 0);
+
+            // Act
+            // Assert
+            Assert.True(target.IsFinished());
+        }
+        
+        [Test]
+        public void ThreeDiaginallyWins()
+        {
+            // Assemble
+            target.SetCircle(0, 0);
+            target.SetCircle(1, 1);
+            target.SetCircle(2, 2);
+
+            // Act
+            // Assert
+            Assert.True(target.IsFinished());
+        }
+
+        [Test]
+        public void ThreeOtherDiaginallyWins()
+        {
+            // Assemble
+            target.SetCircle(0, 2);
+            target.SetCircle(1, 1);
+            target.SetCircle(2, 0);
+
+            // Act
+            // Assert
+            Assert.True(target.IsFinished());
         }
     }
 }
